@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(0, 133, 221);
+    color: #fff;
+    padding: 26px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {
+    padding: 46px 0;
+}
+
+section h2 {
+    margin-bottom: 18px;
+    padding: 8px 0;
+    border-bottom: 2px solid rgb(0, 133, 221);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main h2, 
+main h3 {
+    color:rgb(0, 133, 221)
+}
+
+.store-intern {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 16px;
+}
+
+section ul li img {
+    max-width: 200px;
+    height: 125px;
+}
+
+section ul li {
+    list-style: none;
+    max-width: 30%;
+    margin-right: 16px;
+}
+
+section li {
+    justify-content: center;
+    align-items: center;
+}
+
+section h3,
+section p {
+    margin: 8px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #21bd74;
+}
+
+footer {
+    background-color: rgb(0, 133, 221);
+    color: #fff;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        margin-right: 32px;
+    }
+    header .container {
+        justify-content: center;
+    }
+
+    header nav li {
+        display: block;
+    }
+
+    section ul li img {
+        max-width: 275px;
+        height: 200px;
+    }
+
+    .store-intern {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    section ul li {
+        max-width: 275px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .store-intern {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section ul li img {
+        max-width: 275px;
+        height: 200px;
+    }
+
+    .lista-bikes {
+        flex-wrap: wrap;
+    }
+
+    section ul li {
+        max-width: 275px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 32px;
+    }
+}
